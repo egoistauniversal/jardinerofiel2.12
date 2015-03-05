@@ -12,7 +12,6 @@ class MainWindow(QtGui.QMainWindow):
         self._mySerialUSB = serialusb.SerialUSB()
         self._myTabs = QtGui.QTabWidget(self)
         self._myLog = browser.Browser()
-        # if True:
         if not self._mySerialUSB.error:
             self._standardToolBar = self.addToolBar('General')
             self._graphicToolBar = self.addToolBar('Graphic')
