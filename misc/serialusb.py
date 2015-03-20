@@ -4,7 +4,7 @@ import serial
 class SerialUSB(object):
     def __init__(self):
         self._port = '/dev/ttyACM0'
-        self._bauds = '115200'
+        self._bauds = '57600'
         self._timeout = 0
         self._mySerial = None
         self._temporary_data = ''
